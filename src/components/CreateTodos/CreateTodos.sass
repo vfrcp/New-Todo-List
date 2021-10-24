@@ -1,0 +1,43 @@
+.createTodos
+  .addTodoWrap
+    h2
+
+    .addTodo
+      font-size: 22px
+      max-width: 600px
+      height: 350px
+      margin: 0 auto
+      padding: 25px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      border: solid 3px var(--whiteBrown)
+      border-radius: 5%
+      .importance
+        display: flex
+        justify-content: space-between
+        .radios
+          input
+            transform: scale(2.25)
+            margin: 0 25px 0 10px
+            &:last-child
+              margin-right: 5px
+      .deadline
+        display: flex
+        justify-content: space-between
+      .isFavorites
+        i
+          margin-left: 20px
+          transition: all 0.6s
+          &:hover
+            color: red
+        i.active
+          color: red
+          &:hover
+            color: black
+      .btn
+        width: 150px
+        height: 40px
+        border: solid 3px var(--whiteBrown)
+        border-radius: 5%
+        background: none
